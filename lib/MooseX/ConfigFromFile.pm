@@ -1,13 +1,7 @@
-package MooseX::ConfigFromFile;
-{
-  $MooseX::ConfigFromFile::VERSION = '0.13';
-}
-# git description: v0.12-8-g0e3a578
-
-BEGIN {
-  $MooseX::ConfigFromFile::AUTHORITY = 'cpan:STEVAN';
-}
+package MooseX::ConfigFromFile; # git description: v0.13-18-g507c9de
 # ABSTRACT: An abstract Moose role for setting attributes from a configfile
+
+our $VERSION = '0.14';
 
 use Moose::Role;
 use MooseX::Types::Path::Tiny 0.005 'Path';
@@ -81,8 +75,7 @@ __END__
 
 =encoding UTF-8
 
-=for :stopwords Brandon L. Black, Black Kogman L Chris Prather Karen Etheridge Tomas Doran
-Yuval configfile
+=for stopwords configfile
 
 =head1 NAME
 
@@ -90,7 +83,7 @@ MooseX::ConfigFromFile - An abstract Moose role for setting attributes from a co
 
 =head1 VERSION
 
-version 0.13
+version 0.14
 
 =head1 SYNOPSIS
 
@@ -191,26 +184,13 @@ passed into the constructor explicitly).
 
 =head1 AUTHOR
 
-Brandon L. Black, <blblack@gmail.com>
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2013 by Brandon L. Black.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
+Brandon L. Black <blblack@gmail.com>
 
 =head1 CONTRIBUTORS
 
+=for stopwords Karen Etheridge Tomas Doran Chris Prather Yuval Kogman Zbigniew Lukasiak
+
 =over 4
-
-=item *
-
-Brandon L Black <blblack@gmail.com>
-
-=item *
-
-Chris Prather <chris@prather.org>
 
 =item *
 
@@ -222,8 +202,23 @@ Tomas Doran <bobtfish@bobtfish.net>
 
 =item *
 
+Chris Prather <chris@prather.org>
+
+=item *
+
 Yuval Kogman <nothingmuch@woobling.org>
 
+=item *
+
+Zbigniew Lukasiak <zby@cpan.org>
+
 =back
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2007 by Brandon L. Black.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
